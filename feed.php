@@ -373,6 +373,7 @@ function outputProductItem($product, $combination, $id_lang, $currency_iso, $shi
     if ($has_discount) {
         echo '  <g:price>' . number_format($price_regular, 2, '.', '') . ' ' . $currency_iso . '</g:price>' . "\n";
         echo '  <g:sale_price>' . number_format($price_final, 2, '.', '') . ' ' . $currency_iso . '</g:sale_price>' . "\n";
+        echo '  <g:custom_label_0>sale</g:custom_label_0>' . "\n";
         
         // Add sale price effective date if available
         if ($sale_from || $sale_to) {
